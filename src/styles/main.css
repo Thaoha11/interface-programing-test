@@ -27,7 +27,7 @@ header{
     text-decoration :none;
     color: #41454D;
 }
-form{
+.formInput{
     padding-top: 20px;
 }
 .form-group {

@@ -1,5 +1,10 @@
-const url = 'http://localhost:3000/employees'
 
+var url = "https://freemind-test.netlify.app/.netlify/functions/test"
+
+const start = () => {
+    getEmployees()
+    handleSubmit()
+}
 const getEmployees = (callback) => {
     fetch(url)
         .then(function (response) {
@@ -8,11 +13,12 @@ const getEmployees = (callback) => {
         .then(callback)
 }
 
-const createEmployee = (data, callback) => {
+const createEmployees = (data, callback) => {
     const options = {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+
         },
         body: JSON.stringify(data)
     }
@@ -23,21 +29,16 @@ const createEmployee = (data, callback) => {
         .then(callback)
 }
 
-const handleSubmit = () => {
 
-    const submitForm = document.getElementById('submit')
+const handleSubmit = () => {
+    var submitForm = document.getElementById('submit')
     submitForm.onclick = function () {
         const name = document.querySelector('input[name="name"]').value
         const phone = document.querySelector('input[name="phone"]').value
         const position = document.querySelector('select').value
         const exp = document.querySelector('textarea').value
         const email = document.querySelector('input[type="email"]').value
-        const image = document.querySelector('input[type="file"]')
-
-        image.addEventListener('change', (e) => {
-            const file = e.target.files[0].name
-            console.log(file)
-        })
+        const image = document.querySelector('#input').files[0].name;
 
         const formData = {
             name: name,
@@ -47,15 +48,8 @@ const handleSubmit = () => {
             image: image,
             email: email
         }
-
-        createEmployee(formData)
-
+        createEmployees(formData)
     }
 
-
 }
-const render = () => {
-
-}
-getEmployees(render)
-handleSubmit()
+start()
