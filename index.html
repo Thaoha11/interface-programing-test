@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/fonts.css">
+    <title>FreeMind</title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <a href="javascript:void(0)" class="close">&times;</a>
+            <img src='./src/assets/images/logo.png' alt="logo" />
+            <p class="content">Hãy gửi CV của bạn cho chúng tôi</p>
+        </header>
+        <div>
+            <div class="form-group ">
+                <div class="col-form">
+                    <label class="form-label">Tên của bạn</label>
+                </div>
+                <input name="name" class="form-control" placeholder="Ví dụ: Nguyễn Văn A" />
+            </div>
+
+            <div class="form-group ">
+                <div class="col-form">
+                    <label class="form-label">Số điện thoại</label>
+                </div>
+                <input name="phone" class="form-control" placeholder="số điện thoại liên lạc" />
+            </div>
+
+            <div class="form-group ">
+                <div class="col-form">
+                    <label class="form-label">Vị trí</label>
+                </div>
+                <select id="position" name="position">
+                    <option value="fresher">Fresher</option>
+                    <option value="junior">Junior</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </div>
+
+            <div class="form-group ">
+                <div class="col-form">
+                    <label class="form-label">Kinh nghiệm làm việc</label>
+                </div>
+                <textarea name="message" rows="10" cols="30">
+                </textarea>
+            </div>
+
+            <div class="image-upload">
+                <img src='./src/assets/images/Vector.png' />
+                <span>Đính kèm hình ảnh</span>
+                <input type="file" name='image-upload' id='input' />
+            </div>
+
+            <div class="form-group ">
+                <div class="col-form">
+                    <label class="form-label">Email</label>
+                </div>
+                <input type="email" class="form-control" placeholder="Ex: contact@freemind.vn" />
+            </div>
+
+            <div class="form-button">
+                <button id="submit">Sign in</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./src/javascript/index.js"></script>
+</body>
+
+</html>
