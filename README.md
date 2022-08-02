@@ -8,7 +8,7 @@ https://github.com/Thaoha11/interface-programing-test/tree/feature/post
 ```bash
 git checkout branch feature/practice-1
 ```
-- Step 3 :cd folder inter
+- Step 3 :cd folder interface-programing-test
 ```bash
 cd interface-programing-test
 ```
