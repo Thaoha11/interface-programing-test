@@ -24,14 +24,14 @@
                 <div class="col-form">
                     <label class="form-label">Tên của bạn</label>
                 </div>
-                <input name="name" class="form-control" placeholder="Ví dụ: Nguyễn Văn A" />
+                <input name="name" class="form-control" placeholder="Ví dụ: Nguyễn Văn A" required/>
             </div>
 
             <div class="form-group ">
                 <div class="col-form">
                     <label class="form-label">Số điện thoại</label>
                 </div>
-                <input name="phone" class="form-control" placeholder="số điện thoại liên lạc" />
+                <input name="phone" class="form-control" placeholder="số điện thoại liên lạc" required/>
             </div>
 
             <div class="form-group ">
@@ -49,21 +49,21 @@
                 <div class="col-form">
                     <label class="form-label">Kinh nghiệm làm việc</label>
                 </div>
-                <textarea name="message" rows="10" cols="30">
+                <textarea name="message" rows="10" cols="30" required>
                 </textarea>
             </div>
 
             <div class="image-upload">
                 <img src='./src/assets/images/Vector.png' />
                 <span>Đính kèm hình ảnh</span>
-                <input type="file" name='image-upload' id='input' />
+                <input type="file" name='image-upload' id='input' required />
             </div>
 
             <div class="form-group ">
                 <div class="col-form">
                     <label class="form-label">Email</label>
                 </div>
-                <input type="email" class="form-control" placeholder="Ex: contact@freemind.vn" />
+                <input type="email" class="form-control" placeholder="Ex: contact@freemind.vn" required />
             </div>
 
             <div class="form-button">
@@ -71,7 +71,7 @@
             </div>
         </div>
 
-        <ul id="#list-courses"> </ul>
+       
     </section>
 
     <script src="./src/javascript/index.js"></script>
